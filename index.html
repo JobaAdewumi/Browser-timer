@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body id="body" class="body" onload="initialize()">
+		<div class="container">
+			<div class="logo">
+				<img
+					src="cmcm logo.png"
+					class="main-logo"
+					alt="logo of youth for christ"
+				/>
+			</div>
+			<div id="getStarted" class="timer-container">
+				<h1 class="timer-header">YFC Timer</h1>
+				<hr />
+				<div class="timer-selection">
+					<h3 class="timer-selection-header">
+						Please either select the time or type it
+					</h3>
+					<hr />
+					<div class="timer-selection-options">
+						<h2 class="timer-selection-options-header">Select the time</h2>
+						<form onsubmit="return false;" class="form-inline">
+							<div class="Set-timer__options">
+								<select
+									id="timeSelect"
+									class="form-control form-control--dropdown set-timer-select"
+								>
+									<option value="10800000">180 Minutes</option>
+									<option value="10740000">179 Minutes</option>
+									<option value="10680000">178 Minutes</option>
+									<option value="10620000">177 Minutes</option>
+									<option value="10560000">176 Minutes</option>
+									<option value="10500000">175 Minutes</option>
+									<option value="10440000">174 Minutes</option>
+									<option value="10380000">173 Minutes</option>
+									<option value="10320000">172 Minutes</option>
+									<option value="10260000">171 Minutes</option>
+									<option value="10200000">170 Minutes</option>
+									<option value="10140000">169 Minutes</option>
+									<option value="10080000">168 Minutes</option>
+									<option value="10020000">167 Minutes</option>
+									<option value="9960000">166 Minutes</option>
+									<option value="9900000">165 Minutes</option>
+									<option value="9840000">164 Minutes</option>
+									<option value="9780000">163 Minutes</option>
+									<option value="9720000">162 Minutes</option>
+									<option value="9660000">161 Minutes</option>
+									<option value="9600000">160 Minutes</option>
+									<option value="9540000">159 Minutes</option>
+									<option value="9480000">158 Minutes</option>
+									<option value="9420000">157 Minutes</option>
+									<option value="9360000">156 Minutes</option>
+									<option value="9300000">155 Minutes</option>
+									<option value="9240000">154 Minutes</option>
+									<option value="9180000">153 Minutes</option>
+									<option value="9120000">152 Minutes</option>
+									<option value="9060000">151 Minutes</option>
+									<option value="9000000">150 Minutes</option>
+									<option value="8940000">149 Minutes</option>
+									<option value="8880000">148 Minutes</option>
+									<option value="8820000">147 Minutes</option>
+									<option value="8760000">146 Minutes</option>
+									<option value="8700000">145 Minutes</option>
+									<option value="8640000">144 Minutes</option>
+									<option value="8580000">143 Minutes</option>
+									<option value="8520000">142 Minutes</option>
+									<option value="8460000">141 Minutes</option>
+									<option value="8400000">140 Minutes</option>
+									<option value="8340000">139 Minutes</option>
+									<option value="8280000">138 Minutes</option>
+									<option value="8220000">137 Minutes</option>
+									<option value="8160000">136 Minutes</option>
+									<option value="8100000">135 Minutes</option>
+									<option value="8040000">134 Minutes</option>
+									<option value="7980000">133 Minutes</option>
+									<option value="7920000">132 Minutes</option>
+									<option value="7860000">131 Minutes</option>
+									<option value="7800000">130 Minutes</option>
+									<option value="7740000">129 Minutes</option>
+									<option value="7680000">128 Minutes</option>
+									<option value="7620000">127 Minutes</option>
+									<option value="7560000">126 Minutes</option>
+									<option value="7500000">125 Minutes</option>
+									<option value="7440000">124 Minutes</option>
+									<option value="7380000">123 Minutes</option>
+									<option value="7320000">122 Minutes</option>
+									<option value="7260000">121 Minutes</option>
+									<option value="7200000">120 Minutes</option>
+									<option value="7140000">119 Minutes</option>
+									<option value="7080000">118 Minutes</option>
+									<option value="7020000">117 Minutes</option>
+									<option value="6960000">116 Minutes</option>
+									<option value="6900000">115 Minutes</option>
+									<option value="6840000">114 Minutes</option>
+									<option value="6780000">113 Minutes</option>
+									<option value="6720000">112 Minutes</option>
+									<option value="6660000">111 Minutes</option>
+									<option value="6600000">110 Minutes</option>
+									<option value="6540000">109 Minutes</option>
+									<option value="6480000">108 Minutes</option>
+									<option value="6420000">107 Minutes</option>
+									<option value="6360000">106 Minutes</option>
+									<option value="6300000">105 Minutes</option>
+									<option value="6240000">104 Minutes</option>
+									<option value="6180000">103 Minutes</option>
+									<option value="6120000">102 Minutes</option>
+									<option value="6060000">101 Minutes</option>
+									<option value="6000000">100 Minutes</option>
+									<option value="5940000">99 Minutes</option>
+									<option value="5880000">98 Minutes</option>
+									<option value="5820000">97 Minutes</option>
+									<option value="5760000">96 Minutes</option>
+									<option value="5700000">95 Minutes</option>
+									<option value="5640000">94 Minutes</option>
+									<option value="5580000">93 Minutes</option>
+									<option value="5520000">92 Minutes</option>
+									<option value="5460000">91 Minutes</option>
+									<option value="5400000">90 Minutes</option>
+									<option value="5340000">89 Minutes</option>
+									<option value="5280000">88 Minutes</option>
+									<option value="5220000">87 Minutes</option>
+									<option value="5160000">86 Minutes</option>
+									<option value="5100000">85 Minutes</option>
+									<option value="5040000">84 Minutes</option>
+									<option value="4980000">83 Minutes</option>
+									<option value="4920000">82 Minutes</option>
+									<option value="4860000">81 Minutes</option>
+									<option value="4800000">80 Minutes</option>
+									<option value="4740000">79 Minutes</option>
+									<option value="4680000">78 Minutes</option>
+									<option value="4620000">77 Minutes</option>
+									<option value="4560000">76 Minutes</option>
+									<option value="4500000">75 Minutes</option>
+									<option value="4440000">74 Minutes</option>
+									<option value="4380000">73 Minutes</option>
+									<option value="4320000">72 Minutes</option>
+									<option value="4260000">71 Minutes</option>
+									<option value="4200000">70 Minutes</option>
+									<option value="4140000">69 Minutes</option>
+									<option value="4080000">68 Minutes</option>
+									<option value="4020000">67 Minutes</option>
+									<option value="3960000">66 Minutes</option>
+									<option value="3900000">65 Minutes</option>
+									<option value="3840000">64 Minutes</option>
+									<option value="3780000">63 Minutes</option>
+									<option value="3720000">62 Minutes</option>
+									<option value="3660000">61 Minutes</option>
+									<option value="3600000">60 Minutes</option>
+									<option value="3540000">59 Minutes</option>
+									<option value="3480000">58 Minutes</option>
+									<option value="3420000">57 Minutes</option>
+									<option value="3360000">56 Minutes</option>
+									<option value="3300000">55 Minutes</option>
+									<option value="3240000">54 Minutes</option>
+									<option value="3180000">53 Minutes</option>
+									<option value="3120000">52 Minutes</option>
+									<option value="3060000">51 Minutes</option>
+									<option value="3000000">50 Minutes</option>
+									<option value="2940000">49 Minutes</option>
+									<option value="2880000">48 Minutes</option>
+									<option value="2820000">47 Minutes</option>
+									<option value="2760000">46 Minutes</option>
+									<option value="2700000">45 Minutes</option>
+									<option value="2640000">44 Minutes</option>
+									<option value="2580000">43 Minutes</option>
+									<option value="2520000">42 Minutes</option>
+									<option value="2460000">41 Minutes</option>
+									<option value="2400000">40 Minutes</option>
+									<option value="2340000">39 Minutes</option>
+									<option value="2280000">38 Minutes</option>
+									<option value="2220000">37 Minutes</option>
+									<option value="2160000">36 Minutes</option>
+									<option value="2100000">35 Minutes</option>
+									<option value="2040000">34 Minutes</option>
+									<option value="1980000">33 Minutes</option>
+									<option value="1920000">32 Minutes</option>
+									<option value="1860000">31 Minutes</option>
+									<option value="1800000">30 Minutes</option>
+									<option value="1740000">29 Minutes</option>
+									<option value="1680000">28 Minutes</option>
+									<option value="1620000">27 Minutes</option>
+									<option value="1560000">26 Minutes</option>
+									<option value="1500000">25 Minutes</option>
+									<option value="1440000">24 Minutes</option>
+									<option value="1380000">23 Minutes</option>
+									<option value="1320000">22 Minutes</option>
+									<option value="1260000">21 Minutes</option>
+									<option value="1200000">20 Minutes</option>
+									<option value="1140000">19 Minutes</option>
+									<option value="1080000">18 Minutes</option>
+									<option value="1020000">17 Minutes</option>
+									<option value="960000">16 Minutes</option>
+									<option value="900000">15 Minutes</option>
+									<option value="840000">14 Minutes</option>
+									<option value="780000">13 Minutes</option>
+									<option value="720000">12 Minutes</option>
+									<option value="660000">11 Minutes</option>
+									<option value="600000">10 Minutes</option>
+									<option value="540000">9 Minutes</option>
+									<option value="480000">8 Minutes</option>
+									<option value="420000">7 Minutes</option>
+									<option value="360000">6 Minutes</option>
+									<option selected value="300000">5 Minutes</option>
+									<option value="240000">4 Minutes</option>
+									<option value="180000">3 Minutes</option>
+									<option value="120000">2 Minutes</option>
+									<option value="60000">1 Minute</option>
+									<option value="0">0 Minutes</option>
+								</select>
+								<select id="secSelect" class="set-timer-select">
+									<option value="0">0 Seconds</option>
+									<option value="30000">30 Seconds</option>
+								</select>
+								<select id="howSelect" class="set-timer-select">
+									<option value="on-stage">Start on demand</option>
+									<option value="now">Start now</option>
+									<option value="ten-seconds">Start in 10 seconds</option>
+								</select>
+							</div>
+							<button id="startDropdownButton" class="set-timer-start">
+								Go
+							</button>
+						</form>
+					</div>
+					<hr />
+					<div class="timer-selection-type">
+						<h2 class="timer-selection-type-header">Type your time</h2>
+						<form onsubmit="return false;" class="form-block">
+							<p class="label">Enter Minutes</p>
+							<input id="typeTimeSelect"
+                            tabindex="1"
+                            min="1"
+                            minlength="1"
+                            name="typeTimeSelect" class="input" required type="number" />
+							<p class="label">Enter Seconds</p>
+							<input id="typeSecSelect" class="input"
+                            name="typeSecSelect" type="number" />
+							<select
+								id="typeHowSelect"
+								class="form-control form-control--dropdown set-timer-select"
+							>
+								<option value="on-stage">Start on demand</option>
+								<option value="now">Start now</option>
+								<option value="ten-seconds">Start in 10 seconds</option>
+							</select>
+							<button id="startTypeTimer" class="set-timer-start">Go</button>
+						</form>
+					</div>
+					<div id="bottom-row" class="row">
+						<div id="help-icon-group" class="start-help-icon">
+							<img src="help.png" id="help-icon" class="help-btn" />
+							<p>Help</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="delayModal" aria-hidden="true" class="delay-modal remove">
+				<div id="delay-countdown-holder" class="modal-options">
+					<p class="counter-spot">
+						Start in
+						<span id="delayCounter">10</span>
+					</p>
+					<div class="cancel-link">
+						<button id="delayModalCancel">Cancel</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-timer remove">
+				<div id="counter-wrapper" class="">
+					<div class="counter-cover">
+						<div id="overtime" class="remove">&nbsp;</div>
+						<div id="warning" class="remove">
+							<strong>ALMOST&nbsp;UP </strong>
+						</div>
+						<div id="timer" class="timer-undertime">
+							<p id="counter-container"></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="startPauseModal" aria-hidden="true" class="modal remove">
+					<div class="modalOptions">
+						<div class="row">
+							<div class="">
+								<div id="startPlay" class="helpdot">
+									<img
+										src="play.png"
+										height="50"
+										width="50"
+										id="modal-play-icon"
+										class="svg"
+									/>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="pauseModal" aria-hidden="true" class="remove">
+					<div class="pause-modal">
+						<div id="resume" class="helpdot">
+							<img
+								src="play.png"
+								height="50"
+								width="50"
+								id="modal-play-icon"
+								class="svg"
+							/>
+							<p>Resume</p>
+						</div>
+						<div id="restart" class="helpdot">
+							<img
+								src="startover.png"
+								height="50"
+								width="50"
+								id="modal-play-icon"
+								class="svg"
+							/>
+							<p>Start&nbsp;Over</p>
+						</div>
+						<div id="help" class="helpdot">
+							<img
+								src="help.png"
+								height="50"
+								width="50"
+								id="modal-help-icon"
+								class="help-btn"
+							/>
+							<p>Help</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="counter-utility-row remove" id="counter-bottom-row">
+					<p>Add time</p>
+					<div class="counter-utility-bottom">
+						<form onsubmit="return false;" class="form-utility">
+							<p class="label-bottom">Enter Minutes</p>
+							<input
+								id="addTimeSelect"
+								class="input"
+								required
+                                name="adTimeSelect"
+								type="number"
+								style="margin-right: 10px"
+							/>
+							<p class="label-bottom">Enter Seconds</p>
+							<input
+								id="addSecSelect"
+                                name="addSecSelect"
+								class="input"
+								type="number"
+								style="margin-right: 10px"
+							/>
+
+							<button
+								id="addTimeButton"
+								class="set-timer-start"
+								style="margin-right: 20px"
+							>
+								Add
+							</button>
+						</form>
+						<div id="pause" class="fade-object">
+							<div class="pausedot">
+								<img src="pause.jpg" height="50" width="50" id="pause-icon" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="helpModal" aria-hidden="true" class="modal remove">
+				<div class="modal-options">
+					<h1>Help</h1>
+					<br />
+					<div class="help-text">
+						<br /><br />
+						<h3><strong>Get it</strong></h3>
+						<br /><br />
+						<h3><strong>Use it</strong></h3>
+						To start the Timer, select the duration of your talk (choose any
+						length). Next hit "Start now" to begin the countdown immediately, or
+						"Start in 10 seconds" to give yourself time to get ready.
+						<br /><br />
+						For a less distracting countdown, the Timer initially displays
+						minutes only — for example, a 14-minute talk will flash “14” to
+						start, then display “13” for the next 60 seconds, then “12,” and so
+						on. The dots along the bottom show your progress through each minute
+						(each dot represents six seconds).
+						<br /><br />
+						The Timer will switch to a second-by-second countdown at 90 seconds.
+						If you go over your chosen time, the Timer screen will turn red,
+						flash "OVER TIME," and begin counting up.
+						<br /><br />
+						To pause the Timer, use the button in the lower right corner; if
+						you're on a laptop or desktop machine, move your mouse to make the
+						pause button appear.
+						<br /><br />
+						If you spot a bug or just need help, please email us at
+						<a
+							href="mailto:jobaadewumis@gmail.com?subject=Help with the JB Countdown Timer"
+							>jobaadewumis@gmaii.com</a
+						>.
+					</div>
+					<br /><br />
+					<button id="helpCancel" class="btn-danger">
+						Done
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+
+	</body>
+</html>
